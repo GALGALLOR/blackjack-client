@@ -7,8 +7,8 @@ import java.util.UUID;
 
 public class BlackjackClient {
     private static final String BASE_URL = "http://euclid.knox.edu:8080/api/blackjack";
-    private static final String USERNAME = "jspacco"; // replace with your username
-    private static final String PASSWORD = "12347"; // replace with your from the file posted to Classroom
+    private static final String USERNAME = "grwaqo"; // replace with your username
+    private static final String PASSWORD = "ebaac79"; // replace with your from the file posted to Classroom
 
     public static void main(String[] args) throws Exception {
         ClientConnecter clientConnecter = new ClientConnecter(BASE_URL, USERNAME, PASSWORD);
