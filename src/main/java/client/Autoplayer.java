@@ -22,6 +22,7 @@ public class Autoplayer {
             // STRATEGY: how much to bet?
             state = clientConnecter.placeBet(state.sessionId, 10);
             // did we instantly win or lose?
+        
             if (state.phase.equals("RESOLVED")) {
                 // check for blackjack
                 if (state.outcome.equals("PLAYER_BLACKJACK")) {
@@ -56,6 +57,7 @@ public class Autoplayer {
             clientConnecter.newGame(state.sessionId);
         }
         clientConnecter.finishGame(state.sessionId);
+        System.out.println(state.phase);
         System.out.println("Number of games played: " + numGames);
         System.out.println("Number of wins: " + numWins);
         System.out.println("Number of losses: " + numLosses);
